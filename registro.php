@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +8,7 @@
 </head>
 <body>
     <h1>Ingrese datos</h1>
-    <form method="post" action="conexion.php">
+    <form method="post" action="guardar_registro.php">
        <label> Nombre:
         <input type="text" name="nombre" autocomplete="off"  required>
         </label><br>
@@ -24,7 +25,7 @@
         <input type="password" name="password" placeholder="contraseña" required>
         </label><br>
 
-        <input type="radio" name="rol" value="docente" requiered>Docente
+        <input type="radio" name="rol" value="docente" required>Docente
         <input type="radio" name="rol" value="alumno" required>Alumno
         <br>
         <input type="submit" value="Registrarse">
