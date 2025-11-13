@@ -1,0 +1,14 @@
+/* styles.css — overrides y utilidades simples para el proyecto */
+body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; }
+.container { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
+.header-actions { display:flex; justify-content:space-between; align-items:center; }
+.notice { background:#fffbeb; border:1px solid #fef3c7; padding:0.5rem 1rem; border-radius:6px; }
+
+/* Formularios y utilidades comunes */
+form label { display:block; margin-bottom:0.5rem; }
+form input[type="text"], form input[type="email"], form input[type="password"], form select, form textarea { width:100%; padding:0.5rem; border:1px solid #e5e7eb; border-radius:6px; }
+form button { background-color:#1f2937; color:#fff; padding:0.5rem 1rem; border-radius:6px; border:none; cursor:pointer; }
+.error { color: #b91c1c; background:#fee2e2; padding:0.5rem; border-radius:6px; }
+.mt-1 { margin-top:0.25rem }
+.mb-1 { margin-bottom:0.25rem }
+/* Puedes añadir aquí clases personalizadas */
