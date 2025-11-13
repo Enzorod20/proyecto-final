@@ -78,7 +78,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </form>
 
     <script>
-        (function(){
+        (function(){ //una funcion de javascript hecha con IA porque tenia problema al poner primero el correo y luego seleccionar el rol del usuario
             const radios = document.querySelectorAll('input[name="rol"]');
             const emailInput = document.getElementById('emailInput');
             const emailLabel = document.getElementById('emailLabel');
@@ -87,7 +87,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             function onChange(evt) {
                 const val = this.value;
                 if (val === 'admin') {
-                    // store current typed email (unless it's already 'admin')
                     if (emailInput.value && emailInput.value !== 'admin') prevEmail = emailInput.value;
                     emailInput.type = 'text';
                     emailInput.placeholder = 'admin';
@@ -97,7 +96,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     emailInput.type = 'email';
                     emailInput.placeholder = 'ejemplo@correo.com';
                     emailLabel.textContent = 'Correo:';
-                    // if input currently set to the admin sentinel, restore previous typed email
                     if (emailInput.value === 'admin') {
                         emailInput.value = prevEmail;
                     }
@@ -108,6 +106,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         })();
     </script>
 
-    <p>¿No tienes cuenta? <a href="registro.php">Regístrate aquí</a></p>
+    <p>¿No tienes cuenta? <a href="registro.php">Registrate aca</a></p>
 </body>
 </html>

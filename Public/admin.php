@@ -106,7 +106,7 @@ $alumnos = $admin->listarAlumnos();
 </head>
 <body class="container">
     <header style="display:flex;justify-content:space-between;align-items:center">
-        <h1>Panel de Admin</h1>
+        <h1>Panel del Administrador</h1>
         <form action="logout.php" method="post" style="margin:0">
             <button type="submit">Cerrar sesión</button>
         </form>
@@ -160,8 +160,7 @@ $alumnos = $admin->listarAlumnos();
             </div>
         <?php endforeach; ?>
     </section>
-    <script>
-        // Mostrar select de carrera solo si se selecciona rol 'alumno'
+    <script>//script para poder asignar una carrera a un alumno
         (function(){
             const rol = document.getElementById('rolSelect');
             const labelCarrera = document.getElementById('labelCarrera');

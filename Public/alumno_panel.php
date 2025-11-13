@@ -190,7 +190,7 @@ function statusLabel($s) {
     <h2> Inscribirme en una carrera</h2>
     <p>Inscripto en:</p>
     <?php if (empty($misCarreras)): ?>
-        <p>No estás inscripto en ninguna carrera.</p>
+        <p>No estas inscripto en ninguna carrera.</p>
     <?php else: ?>
         <ul>
             <?php foreach ($misCarreras as $c): ?>
@@ -207,7 +207,7 @@ function statusLabel($s) {
     }
     ?>
     <?php if (empty($availableCarreras)): ?>
-        <p>Ya estás inscrito en todas las carreras disponibles.</p>
+        <p>Ya estas inscrito en todas las carreras disponibles.</p>
     <?php else: ?>
         <form method="post" action="alumno_panel.php">
             <input type="hidden" name="action" value="inscribir_carrera">
@@ -225,7 +225,7 @@ function statusLabel($s) {
 
     <h2> Inscripcion a materias</h2>
     <?php if (empty($misCarreras)): ?>
-        <p>Inscríbete primero en una carrera para poder anotarte en materias.</p>
+        <p>Inscribete primero en una carrera para poder anotarte en materias.</p>
     <?php else: ?>
         <form method="post" action="alumno_panel.php">
             <input type="hidden" name="action" value="inscribir_materia">
@@ -256,7 +256,7 @@ function statusLabel($s) {
 
     <h2>Mis materias y notas</h2>
     <?php if (empty($misMaterias)): ?>
-        <p>No estás inscripto en ninguna materia todavía.</p>
+        <p>No estas inscripto en ninguna materia todavia.</p>
     <?php else: ?>
         <table>
             <thead><tr><th>Materia</th><th>Carrera</th><th>Nota 1</th><th>Nota 2</th><th>Estado</th><th>Acciones</th></tr></thead>
