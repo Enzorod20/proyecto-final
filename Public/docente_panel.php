@@ -142,8 +142,8 @@ function computeStatus($n1, $n2) {
                                             <input type="hidden" name="ID_materia" value="<?= $ID_materia ?>">
                                             <input type="hidden" name="ID_carrera" value="<?= $ID_carrera ?>">
                                             <input type="hidden" name="ID_alumno" value="<?= intval($a['ID_alumno']) ?>">
-                                            <input type="text" name="nota1" placeholder="1ª nota" class="w-16 p-1 border rounded" value="<?= htmlspecialchars($a['nota1'] ?? '') ?>">
-                                            <input type="text" name="nota2" placeholder="2ª nota" class="w-16 p-1 border rounded" value="<?= htmlspecialchars($a['nota2'] ?? '') ?>">
+                                            <input type="number" name="nota1" placeholder="1ª nota" class="w-16 p-1 border rounded" value="<?= htmlspecialchars($a['nota1'] ?? '') ?>" max ="10"; min="1";>
+                                            <input type="number" name="nota2" placeholder="2ª nota" class="w-16 p-1 border rounded" value="<?= htmlspecialchars($a['nota2'] ?? '') ?>" max ="10"; min="1";>
                                             <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-2 py-1 rounded">Guardar calificaciones</button>
                                         </form>
                                     </div>

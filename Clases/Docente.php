@@ -128,9 +128,12 @@ class Docente extends Usuario
 
     public static function computeStatus($nota1, $nota2): string
     {
-        if ($nota1 === null && $nota2 === null) return 'sin_notas';
+        if ($nota1 === null && $nota2 === null) return 'sin_notas';     
         $n1 = is_null($nota1) ? null : floatval($nota1);
         $n2 = is_null($nota2) ? null : floatval($nota2);
+        if (($n1 < 0 || $n1 > 10) || ($n2 < 0 || $n2 > 10)){
+            return 'error, debe ajustar la nota en rango de 1 a 10';
+        }
         if ($n1 !== null && $n2 !== null) {
             if ($n1 >= 7 && $n2 >= 7) return 'promocionado';
             if ($n1 < 6 || $n2 < 6) return 'libre';
